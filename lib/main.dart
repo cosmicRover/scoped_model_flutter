@@ -12,3 +12,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//Scoped model is a way of maintaining app state in a clean clutter free way
+//using ScopedModels and it's descendants + only using stateless widgets

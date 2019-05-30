@@ -7,10 +7,13 @@ import 'package:scoped_model_flutter/widget3.dart';
 
 class App extends StatelessWidget {
 
+  //init an instance of the scoped counters. Ideally you want it somewhere more
+  //top level
   final ScopedCounters scopedCounters = ScopedCounters();
 
   @override
   Widget build(BuildContext context) {
+    //wraps the scaffold with scoped models
     return ScopedModel<ScopedCounters>(
       model: scopedCounters,
       child: Scaffold(
